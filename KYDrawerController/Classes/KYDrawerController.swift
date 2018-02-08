@@ -374,8 +374,6 @@ open class KYDrawerController: UIViewController, UIGestureRecognizerDelegate {
 
                 if let didChangeState = self.delegate?.drawerController(_:didChangeState:) {
                     didChangeState(self, state)
-                } else {
-                    self.delegate?.drawerController?(self, stateChanged: state)
                 }
         }
     }
